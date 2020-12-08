@@ -19,7 +19,7 @@
 def is_correct(pred, true):
     answer = 0
     for i in range(len(true)):
-        answer += (pred[i%len(pred)] == true[i])
+        answer += (pred[i%len(pred)] == true[i]) # boolean -> 숫자
     return answer    
 
 def solution(answers):
@@ -28,7 +28,7 @@ def solution(answers):
     third = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]
     scores = [is_correct(first, answers), is_correct(second, answers), is_correct(third, answers)]
     
-    return [i+1 for i, v in enumerate(scores) if v == max(scores)]
+    return [i+1 for i, v in enumerate(scores) if v == max(scores)] # 인덱스 0번부터 시작함.
 
 '''
 정확성  테스트

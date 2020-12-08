@@ -2,14 +2,17 @@
 
 ## Level  1
 
-|   문제   |  코드  |                             비고                             |
-| :------: | :----: | :----------------------------------------------------------: |
-| K번째 수 | Python | [lambda 사용법](https://programmers.co.kr/learn/courses/30/lessons/42748/solution_groups?language=python3) |
-|          |        |                                                              |
-|          |        |                                                              |
-|          |        |                                                              |
-|          |        |                                                              |
-|          |        |                                                              |
+|            문제             |  코드  |                             비고                             |
+| :-------------------------: | :----: | :----------------------------------------------------------: |
+|          K번째 수           | Python | [lambda 사용법](https://programmers.co.kr/learn/courses/30/lessons/42748/solution_groups?language=python3) |
+|  나누어 떨어지는 숫자 배열  | Python |                                                              |
+| 문자열 내 마음대로 정렬하기 | Python |                                                              |
+|   문자열 내 p와 y의 개수    | Python |                                                              |
+|     문자열 다루기 기본      | Python |                                                              |
+|        3진법 뒤집기         | Python |                                                              |
+|          모의고사           | Python |                                                              |
+|                             |        |                                                              |
+|                             |        |                                                              |
 
 
 
@@ -23,4 +26,13 @@
 |      |      |      |      |
 
 
+
+## Level 3
+
+|    날짜    |                             문제                             |  코드  | 비고 |
+| :--------: | :----------------------------------------------------------: | :----: | :--: |
+| 2020.12.08 | [멀리뛰기](https://programmers.co.kr/learn/courses/30/lessons/12914) | Python |      |
+|            |                                                              |        |      |
+|            |                                                              |        |      |
+|            |                                                              |        |      |
 
