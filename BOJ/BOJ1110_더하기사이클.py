@@ -14,5 +14,5 @@ cnt = 1
 while int(temp) != int(num):
     temp = cycle(temp)
     cnt += 1
-    print(temp)
-print('최종', cnt)
+    # print(temp)
+print(cnt)
