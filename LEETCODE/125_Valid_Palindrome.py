@@ -1,12 +1,15 @@
 import re
 
-'''
+# 1. 배열 뒤집기
+
+
 class Solution:
 
-    def isPalindrome(self, s:str) -> bool:
+    def isPalindrome(self, s: str) -> bool:
         to_be_checked = [char.lower() for char in s if char.isalnum()]
-        return to_be_checked == to_be_checked[::-1] 
-'''
+        return to_be_checked == to_be_checked[::-1]
+
+# 2. 인덱싱
 
 
 class Solution:
