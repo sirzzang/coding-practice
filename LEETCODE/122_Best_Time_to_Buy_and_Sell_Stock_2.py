@@ -1,5 +1,7 @@
 from typing import List
 
+'''88ms, 14.9MB'''
+
 
 def maxProfit(prices: List[int]) -> int:
     print()
@@ -20,7 +22,11 @@ def maxProfit(prices: List[int]) -> int:
             elif price > stack[-1]:
                 stack.append(price)
         print(f"price: {price}, stack: {stack}, profit: {profit}")
-    print(profit, stack)
+
+    if len(stack) >= 2:
+        return profit + (stack[-1]-stack[0])
+    else:
+        return profit
 
 
 maxProfit([7, 1, 5, 3, 6, 4])
