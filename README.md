@@ -5,11 +5,11 @@
 
 | 문제               | url                                                      | 체크  | 비고   |
 | ------------------ | -------------------------------------------------------- | ----- | ------ |
-| 거스름돈           | https://www.acmicpc.net/problem/14916                    | - [ ] | 그리디 |
-| 요세푸스 문제      | https://www.acmicpc.net/problem/1158                     | - [ ] |        |
-| K번째 수           | https://programmers.co.kr/learn/courses/30/lessons/42748 | - [ ] | 정렬   |
-| 완주하지 못한 선수 | https://programmers.co.kr/learn/courses/30/lessons/42576 | - [ ] | 해시   |
-| 추가 문제 1        |                                                          |       |        |
+| 거스름돈           | https://www.acmicpc.net/problem/14916                    | - [x] | 그리디 |
+| 요세푸스 문제      | https://www.acmicpc.net/problem/1158                     | - [x] |        |
+| K번째 수           | https://programmers.co.kr/learn/courses/30/lessons/42748 | - [x] | 정렬   |
+| 완주하지 못한 선수 | https://programmers.co.kr/learn/courses/30/lessons/42576 | - [x] | 해시   |
+| 추가 문제 1        |                                                          | - [x] |        |
 |                    |                                                          |       |        |
 |                    |                                                          |       |        |
 |                    |                                                          |       |        |
