@@ -1,3 +1,6 @@
+from itertools import permutations
+from typing import List
+
 '''
 정확성  테스트
 테스트 1 〉	통과 (0.04ms, 10.5MB)
@@ -32,9 +35,7 @@
 테스트 30 〉	통과 (0.09ms, 10.5MB)
 '''
 
-from itertools import permutations
-
-def string_to_infix(expression):
+def string_to_infix(expression: str) -> List[str]:
     infix = []
     digit = ''
     for char in expression:
@@ -48,7 +49,7 @@ def string_to_infix(expression):
         infix.append(digit)
     return infix
 
-def infix_to_postfix(infix_arr, operand_rank):
+def infix_to_postfix(infix_arr: List[str], operand_rank: dict) -> List[str]:
     stack = []
     postfix = []
     for elem in infix_arr:
@@ -62,7 +63,7 @@ def infix_to_postfix(infix_arr, operand_rank):
         postfix.append(stack.pop())
     return postfix
 
-def calculate_postfix(postfix_arr):
+def calculate_postfix(postfix_arr: List[str]):
     stack = []
     for elem in postfix_arr:
         if elem.isdigit():
@@ -83,10 +84,10 @@ def calculate_postfix(postfix_arr):
 def solution(expression):
     answer = 0
 
-    # 주어진 문자열을 중위표기 식으로 변환
+    # 주어진 문자열을 중위표기 식의 각 연산자와 피연산자로 구성된 리스트로 변환
     infix = string_to_infix(expression)
 
-    # 연산자 우선순위
+    # 연산자 우선순위 경우의 수 도출
     operands = set(char for char in expression if not char.isdigit())
     ranks = permutations(operands, len(operands))
 
