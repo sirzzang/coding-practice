@@ -27,7 +27,6 @@ def solution(citations):
         
         # h회 이상 인용된 논문의 수가 h편 이상이면
         if cur_h >= h:
-            print('here', cur_h, h)
             return h
         
         h -= 1
