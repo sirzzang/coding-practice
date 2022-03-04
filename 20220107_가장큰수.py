@@ -17,6 +17,12 @@
 테스트 15 〉	통과 (0.02ms, 10.3MB)
 '''
 
+# 12121212 vs. 121121121
+# 1200 1210
+# 1211 1211
+# 1212 1211
+# 12121 vs 12112
+
 from itertools import cycle
 
 def pad_number(n):
@@ -37,3 +43,10 @@ def solution(numbers):
     numbers_list.sort(key = lambda x: -int(pad_number(x)))   
     
     return ''.join(numbers_list)
+
+if __name__ == '__main__':
+    l1 = [0, 2]
+    l2 = [0, 1, 2]
+    l3 = [0, 2, 3]
+    print(l1 in l2)
+    print(l1 in l3)

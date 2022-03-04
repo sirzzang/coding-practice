@@ -24,12 +24,11 @@
 
 def solution(n, lost, reserve):
     
-    lost.sort()
-    reserve.sort()
-    
     lost_real = [l for l in lost if l not in reserve]
     reserve_real = [r for r in reserve if r not in lost]
     
+    lost_real.sort()
+    reserve_real.sort()
     
     for r in reserve_real:
         
