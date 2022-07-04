@@ -1,4 +1,4 @@
-package Programmers.신고결과받기_92334;
+package Programmers.신고결과받기_92334.java;
 
 import java.util.*;
 
