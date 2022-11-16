@@ -11,8 +11,21 @@
         2. `burger` 리스트 비교 말고 다른 방식으로 비교하는 건 어떨까
 - [Solution2](python/solution2.py)
     - [Solution1](python/solution1.py)에서 비교 방식만 리스트에서 문자열로 바꿨을 뿐인데 통과됨
-
+- [Solution3](python/solution3.py): 시간 초과
+    - 애초에 [Soluton1](python/solution1.py)에서 deque을 이용할 필요가 없었으며, `len(stack) >= 4` 검사를 하지 않아도 되었음
+    - 그런데 시간 초과. `stack = stack[:-4]` 이 부분이 문제일까?
+- [Solution4](python/solution4.py): 결과적으로 위의 풀이들에서는 `stack = stack[:-4]` 이 부분이 문제였을 수도 있지 않을까?
+- [Solution5](python/solution5.py)
+    - 애초에 재료, 햄버거 모두 문자열로 만들어서 찾고자 하는 햄버거 문자열이 있으면 빼내면 되지 않을까?
+    - `String.replace()` 메서드 사용
+        - 원본 문자열을 바꾸지 않으므로, 바꾼 문자열 재할당 해줘야 함
+        - `String.replace()` 메서드 써 버리면, 찾은 문자열 모두 바꿔 버림
+            - [1, 1, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1]의 경우, 3개가 만들어 져야 하는데, "1231" 모두 바꿔서 1개 밖에 못 찾음
+- [Solution5](python/solution6.py): 시간 초과
+    - [Solution4](python/solution5.py)에서 `String.replace()` 메서드 세 번째 파라미터 `count`를 이용
 
 ## TODO
 - [ ] Python 리스트 비교 vs. 문자열 비교, 리스트 비교 부담이 얼마나 되는지
+- [ ] Python 리스트 슬라이싱해서 다시 할당하는 거가 pop에 비해 부담인가?
+- [ ] Python `str.replace` 메서드 효율성?
 
