@@ -1,4 +1,4 @@
-# 푸드파이트대회
+# 푸드 파이트 대회
 
 ## Java
 - Int -> String, String -> Int
