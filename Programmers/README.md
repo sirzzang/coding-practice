@@ -16,7 +16,7 @@
 | | https://school.programmers.co.kr/learn/courses/30/lessons/12948 | |
 | | https://school.programmers.co.kr/learn/courses/30/lessons/12950 | |
 | | https://school.programmers.co.kr/learn/courses/30/lessons/12954 | |
-| | | |
+| 2 | https://school.programmers.co.kr/learn/courses/30/lessons/134239# | [우박 수열 정적분](우박수열정적분_134239/) |
 | | | |
 | | | |
 | | | |
